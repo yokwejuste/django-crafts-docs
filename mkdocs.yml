@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: DjangoCraft 
 site_url: https://sitename.example
 theme:
   name: material
@@ -23,10 +23,17 @@ theme:
       primary: blue
       accent: deep orange
 
-
-markdown_extensions: 
+markdown_extensions:
   - attr_list
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.fence_code_format 
-      emoji_generator: !!python/name/material.extensions.
-       
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg    
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
