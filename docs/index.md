@@ -2,15 +2,15 @@
 
 This documentation contains various Django projects and tutorials to help you learn and implement different Django features and functionalities.
 
-## Projects
+## Features
 
 ### Django 2FA
 
-A Django project that demonstrates how to [implement Two-Factor Authentication in your Django applications](). This enhances security by requiring users to provide two forms of identification before gaining access.
+A Django project that demonstrates how to implement [Two-Factor Authentication in your Django applications](./projects/Django%202FA.md). This enhances security by requiring users to provide two forms of identification before gaining access.
 
 ### Django SSO
 
-A [Django-based Single Sign-On (SSO) implementation](./django_sso/) that allows users to authenticate using Google OAuth2. This project demonstrates how to:
+A [Django-based Single Sign-On (SSO) implementation](./projects/Django%20SSO.md) that allows users to authenticate using Google OAuth2. This project demonstrates how to:
 
 1. Authenticate users with Google OAuth2
 2. Generate SSO tokens that can be used by other applications
@@ -20,7 +20,7 @@ The implementation provides a practical example of SSO for educational purposes,
 
 ### Django 2FA with Google Authenticator
 
-A [comprehensive Django application](./django2fa/) demonstrating two-factor authentication (2FA) implementation using `django-two-factor-auth`. This project showcases a secure Django implementation with multiple two-factor authentication methods including:
+A [comprehensive Django application](./projects/Django%202FA%20with%20Google%20Authenticator.md) demonstrating two-factor authentication (2FA) implementation using `django-two-factor-auth`. This project showcases a secure Django implementation with multiple two-factor authentication methods including:
 
 - TOTP (Time-based One-Time Password) for Google Authenticator
 - Email verification codes
@@ -30,7 +30,7 @@ The application provides a complete authentication flow with a custom user model
 
 ### Django Passkeys
 
-A [Django-based web application](https://github.com/yokwejuste/django-passkeys) that implements both traditional authentication (username/password) and passkey authentication using the WebAuthn API. Passkey authentication allows users to securely log in without passwords, using biometric or hardware-based authentication methods.
+A [Django-based web application](./projects/Django%20Passkeys.md) that implements both traditional authentication (username/password) and passkey authentication using the WebAuthn API. Passkey authentication allows users to securely log in without passwords, using biometric or hardware-based authentication methods.
 
 Key features include:
 - Traditional username/password registration and login
@@ -40,7 +40,7 @@ Key features include:
 
 ### Django ReCaptcha
 
-A [comprehensive demonstration](./django_recaptcha/) of different CAPTCHA implementations in Django, including Google reCAPTCHA (v2 and v3) and Django Simple CAPTCHA. This project helps protect your forms from spam and bot submissions by showcasing multiple CAPTCHA types:
+A comprehensive demonstration of different [CAPTCHA implementations in Django](./projects/Django%20ReCaptcha.md/) , including Google reCAPTCHA (v2 and v3) and Django Simple CAPTCHA. This project helps protect your forms from spam and bot submissions by showcasing multiple CAPTCHA types:
 
 - Google reCAPTCHA v2 Checkbox - Traditional "I'm not a robot" verification
 - Google reCAPTCHA v2 Invisible - Protection without user interaction
@@ -51,7 +51,7 @@ The implementation uses Django, django-recaptcha, django-simple-captcha, and Tai
 
 ### Device Fingerprinting
 
-A [Django-based device fingerprinting system](./device_fingerprinting/) that demonstrates how to identify and track unique devices accessing your web application. This project showcases:
+A [Django-based device fingerprinting system](./projects/Device%20Fingerprinting.md) that demonstrates how to identify and track unique devices accessing your web application. This project showcases:
 
 - Browser-based device fingerprinting implementation
 - Secure storage of device signatures
@@ -60,3 +60,19 @@ A [Django-based device fingerprinting system](./device_fingerprinting/) that dem
 - Privacy-focused implementation with customizable tracking parameters
 
 The implementation provides a practical example of device fingerprinting for both security and analytics purposes, helping you understand how to identify suspicious login attempts and track user devices without relying on cookies.
+
+## Contributing
+
+Please refer to our [CONTRIBUTING](./contributing.md) file for guidelines on how to contribute to this repository.
+
+## Security
+
+For security concerns, please see our [SECURITY](./security.md) file.
+
+## Support
+
+Need help? Check out our [SUPPORT](./suport.md) document for assistance options.
+
+## License
+
+This project is licensed under the terms specified in the [LICENSE](./) file.
