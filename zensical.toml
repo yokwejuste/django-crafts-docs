@@ -35,6 +35,12 @@ site_url = "https://crafts.yokwejuste.me"
 # Read more: https://zensical.org/docs/setup/basics/#copyright
 copyright = "Copyright &copy; 2025 Steve Yonkeu. All rights reserved."
 
+# The repository URL. This enables the "view source" and "edit" buttons.
+#
+# Read more: https://zensical.org/docs/setup/repository/
+repo_url = "https://github.com/yokwejuste/DjangoCrafts"
+repo_name = "yokwejuste/DjangoCrafts"
+
 # Zensical supports both implicit navigation and explicitly defined navigation.
 # If you decide not to define a navigation here then Zensical will simply
 # derive the navigation structure from the directory structure of your
@@ -42,10 +48,6 @@ copyright = "Copyright &copy; 2025 Steve Yonkeu. All rights reserved."
 # can be defined using TOML syntax.
 #
 # Read more: https://zensical.org/docs/setup/navigation/
-# nav = [
-#   { "Get started" = "index.md" },
-#   { "Markdown in 5min" = "markdown.md" },
-# ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
 # your Zensical project according to your needs. You can add any number of
@@ -81,7 +83,7 @@ copyright = "Copyright &copy; 2025 Steve Yonkeu. All rights reserved."
 # Read more:
 # - https://zensical.org/docs/customization/#extending-the-theme
 #
-#custom_dir = "overrides"
+custom_dir = "overrides"
 
 # With the "favicon" option you can set your own image to use as the icon
 # browsers will use in the browser title bar or tab bar. The path provided
@@ -120,13 +122,13 @@ features = [
     # will generate an edit button for the page. This works for common
     # repository hosting services.
     # https://zensical.org/docs/setup/repository/#code-actions
-    #"content.action.edit",
+    "content.action.edit",
 
     # If you have a repository configured and turn feature this on, Zensical
     # will generate a button that allows the user to view the Markdown
     # code for the current page.
     # https://zensical.org/docs/setup/repository/#code-actions
-    #"content.action.view",
+    "content.action.view",
 
     # Code annotations allow you to add an icon with a tooltip to your
     # code blocks to provide explanations at crucial points.
@@ -166,7 +168,7 @@ features = [
     # Turn on this feature to expand all collapsible sections in the
     # navigation sidebar by default.
     # https://zensical.org/docs/setup/navigation/#navigation-expansion
-    # "navigation.expand",
+    "navigation.expand",
 
     # This feature turns on navigation elements in the footer that allow the
     # user to navigate to a next or previous page.
@@ -197,7 +199,7 @@ features = [
     # When navigation paths are activated, a breadcrumb navigation is rendered
     # above the title of each page
     # https://zensical.org/docs/setup/navigation/#navigation-path
-    "navigation.path",
+    # "navigation.path",
 
     # When pruning is enabled, only the visible navigation items are included
     # in the rendered HTML, reducing the size of the built site by 33% or more.
@@ -207,7 +209,7 @@ features = [
     # When sections are enabled, top-level sections are rendered as groups in
     # the sidebar for viewports above 1220px, but remain as-is on mobile.
     # https://zensical.org/docs/setup/navigation/#navigation-sections
-    "navigation.sections",
+    #"navigation.sections",
 
     # When tabs are enabled, top-level sections are rendered in a menu layer
     # below the header for viewports above 1220px, but remain as-is on mobile.
@@ -301,8 +303,16 @@ toggle.name = "Switch to light mode"
 # Set to false to remove the "Made with Zensical" notice in the footer
 generator = false
 
+# Social media meta tags for link previews
+[project.extra.social_meta]
+image = "/images/social-preview.png"
+image_type = "image/png"
+image_width = 1200
+image_height = 630
+
 #[[project.extra.social]]
 #icon = "fontawesome/brands/github"
 #link = "https://github.com/user/repo"
 
-
+[project.plugins.offline]
+enabled = false
