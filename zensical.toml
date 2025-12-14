@@ -316,5 +316,3 @@ image_height = 630
 #icon = "fontawesome/brands/github"
 #link = "https://github.com/user/repo"
 
-[project.plugins.offline]
-enabled = false
